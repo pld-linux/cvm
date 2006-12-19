@@ -2,7 +2,7 @@
 # - separate -devel package
 # - think how to fix --as-needed this time
 Summary:	Credential Validation Modules
-Summary(pl):	ModuÅ‚y uwierzytelniajÄ…ce CVM
+Summary(pl):	Modu³y uwierzytelniaj±ce CVM
 Name:		cvm
 Version:	0.82
 Release:	0.1
@@ -18,12 +18,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define         filterout_ld    -Wl,--as-needed
 
 %description
-This package implements the CVM interface as a client (cvm-testclient),
-and as a module (cvm-unix, cvm-pwfile).
+This package implements the CVM interface as a client
+(cvm-testclient), and as a module (cvm-unix, cvm-pwfile).
 
 %description -l pl
 Pakiet implementuje interfejs CVM od strony klienta (cvm-testclient)
-i moduÅ‚u (cvm-unix, cvm-pwfile).
+i modu³ów (cvm-unix, cvm-pwfile).
 
 %prep
 %setup -q
@@ -42,7 +42,9 @@ echo '%{_libdir}' > conf-lib
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install install_prefix="$RPM_BUILD_ROOT"
+
+%{__make} install \
+	install_prefix=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -51,5 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
+# FIXME: errogenous!
 %{_libdir}/*
 %{_includedir}/*
