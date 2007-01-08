@@ -22,8 +22,8 @@ This package implements the CVM interface as a client
 (cvm-testclient), and as a module (cvm-unix, cvm-pwfile).
 
 %description -l pl
-Pakiet implementuje interfejs CVM od strony klienta (cvm-testclient)
-i modu³ów (cvm-unix, cvm-pwfile).
+Pakiet implementuje interfejs CVM od strony klienta (cvm-testclient) i
+modu³ów (cvm-unix, cvm-pwfile).
 
 %prep
 %setup -q
