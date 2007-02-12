@@ -2,7 +2,7 @@
 # - separate -devel package
 # - think how to fix --as-needed this time
 Summary:	Credential Validation Modules
-Summary(pl):	Modu≥y uwierzytelniaj±ce CVM
+Summary(pl.UTF-8):   Modu≈Çy uwierzytelniajƒÖce CVM
 Name:		cvm
 Version:	0.82
 Release:	0.1
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package implements the CVM interface as a client
 (cvm-testclient), and as a module (cvm-unix, cvm-pwfile).
 
-%description -l pl
+%description -l pl.UTF-8
 Pakiet implementuje interfejs CVM od strony klienta (cvm-testclient) i
-modu≥Ûw (cvm-unix, cvm-pwfile).
+modu≈Ç√≥w (cvm-unix, cvm-pwfile).
 
 %prep
 %setup -q
