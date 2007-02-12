@@ -2,7 +2,7 @@
 # - separate -devel package
 # - think how to fix --as-needed this time
 Summary:	Credential Validation Modules
-Summary(pl.UTF-8):   Moduły uwierzytelniające CVM
+Summary(pl.UTF-8):	Moduły uwierzytelniające CVM
 Name:		cvm
 Version:	0.82
 Release:	0.1
