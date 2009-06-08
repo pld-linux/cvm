@@ -4,12 +4,12 @@
 Summary:	Credential Validation Modules
 Summary(pl.UTF-8):	Moduły uwierzytelniające CVM
 Name:		cvm
-Version:	0.82
+Version:	0.95
 Release:	0.1
 License:	GPL
 Group:		Development/Libraries
 Source0:	http://untroubled.org/cvm/%{name}-%{version}.tar.gz
-# Source0-md5:	c8ce29c3b0ec932ae2d8c0c0eb94915a
+# Source0-md5:	3b9e3fa33ee0d84069e60181249c9499
 URL:		http://untroubled.org/cvm/
 BuildRequires:	bglibs-devel
 BuildRequires:	libtool
